@@ -24,7 +24,7 @@ uri = URI.parse("https://stream.watsonplatform.net/authorization/api/v1/token?ur
 
 Net::HTTP.start(uri.host, uri.port,:use_ssl => uri.scheme == 'https') do |http|
 	request = Net::HTTP::Get.new(uri)
-	request.basic_auth '42a58767-5181-4462-b5cd-b6bb7573e491', 'OCZyXJdAR4tK'
+	request.basic_auth 'insert username', 'insert password'
 	token = http.request(request)
 end
 
