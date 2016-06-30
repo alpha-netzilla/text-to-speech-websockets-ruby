@@ -18,3 +18,6 @@ To get service credentials, follow these steps:
      2. Copy `username` and `password` from these service credentials and paste them into the example.rb file.
      
  4. Run the example.rb file
+
+ 5. Author:
+     http://alpha-netzilla.blogspot.com/
