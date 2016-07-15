@@ -28,7 +28,7 @@ Net::HTTP.start(uri.host, uri.port,:use_ssl => uri.scheme == 'https') do |http|
 	token = http.request(request)
 end
 
-watson_url = "wss://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voice=voice&recognize?watson-token=#{token.body}"
+watson_url = "wss://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voice=#{voice}&recognize?watson-token=#{token.body}"
 
 
 
